@@ -2,3 +2,5 @@ Flask==2.3.2
 pandas
 requests
 pandas
+gunicorn
+python-dotenv
