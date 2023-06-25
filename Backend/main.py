@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from requests import get
 import pandas as pd
 import os
@@ -6,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__)
-
+CORS(app)
 
 API_KEY = os.getenv('API_KEY')
 queryid= os.getenv('QUERY_ID')
