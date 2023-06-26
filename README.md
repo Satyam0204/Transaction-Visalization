@@ -11,3 +11,9 @@
 ```bash
     docker-compose down
 ```
+
+
+## Api Endpoints:
+ -  /get-arbritrum-transactions - get arbitrum average transactions per block 
+ - /ethereum-data/<date> - get first and last ethereum block numbers of specified date
+   
