@@ -34,7 +34,7 @@ def getdata():
     data=dict(zip(dates,transactions))
     return data
 
-@app.get('/')
+@app.get('/get-arbritrum-transactions')
 def fetch_data():
     try:
         data =getdata()

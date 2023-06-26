@@ -13,7 +13,7 @@ const Chart = () => {
     const gettransactions=async()=>{
       try {
         
-        let response = await fetch('http://localhost:5000/',{
+        let response = await fetch('http://localhost:5000/get-arbritrum-transactions',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json'
