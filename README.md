@@ -2,6 +2,12 @@
 
 ## Run the docker containers
 
+### Set-up enviornment variables
+
+```bash
+    cp Backend/.example.env Backend/.env
+```
+
 ```bash
     docker-compose up --build -d
 ```
