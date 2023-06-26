@@ -11,6 +11,8 @@ const Chart = () => {
   }, []);
 
     const gettransactions=async()=>{
+      try {
+        
         let response = await fetch('http://localhost:5000/',{
             method:'GET',
             headers:{
@@ -21,6 +23,9 @@ const Chart = () => {
         setXdata(Object.keys(data))
         setYdata(Object.values(data))
         console.log(data)
+      } catch (error) {
+          console.error(error)
+      }
     }
 
     var options = {
