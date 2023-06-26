@@ -7,7 +7,7 @@
 ```bash
     cp Backend/.example.env Backend/.env
 ```
-
+### Spin-up the docker containers
 ```bash
     docker-compose up --build -d
 ```
